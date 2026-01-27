@@ -76,5 +76,7 @@ def receber_jira():
     return jsonify({"status": "erro na integracao"}), 500
 
 if __name__ == '__main__':
-    # Roda o servidor na porta 5000
-    app.run(port=5000)
+    import os
+    # O Render define a porta automaticamente na variável de ambiente PORT
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
