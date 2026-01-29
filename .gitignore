@@ -1,0 +1,5 @@
+data/integracao_jira.db
+data/ultimo_pull_jira.json
+output/
+__pycache__/
+.env
