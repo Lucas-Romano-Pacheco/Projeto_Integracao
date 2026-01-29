@@ -1,0 +1,176 @@
+HISTÓRICO DE COMENTÁRIOS - 2026-01-28 23:48:04.714758
+==================================================
+
+>>> CHAMADO: CSSS-1014 <<<
+[2026-01-28T13:25:04.066-0300] Roger Lourenço Rios: 
+
+!image.png|thumbnail!
+[2026-01-28T13:26:17.366-0300] Roger Lourenço Rios: h2. Informação ao Solicitante
+{quote}
+{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}
+
+---
+Logo retornaremos com maiores informações.
+Fique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.
+--- \\
+\\
+----
+Obs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*
+Link direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]
+----
+{quote}
+[2026-01-28T14:49:51.888-0300] Milton Orgil da Silva - Multidata: Boa tarde, Roger! 
+
+ 
+
+Liberação realizada. Pode dar updatenow e testar. Fico no aguardo de um feedback!
+
+ 
+
+Atenciosamente,
+
+ 
+------------------------------
+
+>>> CHAMADO: CSSS-1010 <<<
+[2026-01-28T11:57:46.377-0300] Roger Lourenço Rios: h2. Informação ao Solicitante
+{quote}
+{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}
+
+---
+Logo retornaremos com maiores informações.
+Fique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.
+--- \\
+\\
+----
+Obs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*
+Link direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]
+----
+{quote}
+[2026-01-28T11:59:39.037-0300] Milton Orgil da Silva - Multidata: Bom dia, Denison! Iremos providenciar
+
+Assim que obtivermos os instaladores, enviaremos através de canais seguros de envio.
+[2026-01-28T16:42:42.449-0300] Milton Orgil da Silva - Multidata: Boa tarde, Denison!
+
+Em relação a solicitação "Endpoint para Notebook TI com VPN e politicas voltadas a TI." estamos mapeando qual a política para as máquinas relacionadas ao setor de TI.
+
+ 
+
+No tenant do SESC, encontramos uma política com o nome DTDI. Enquanto no SENAC, encontramos uma política com o nome CEIN:
+ * Alguma dessas políticas está relacionada ao departamento de TI da corporação?
+
+ 
+
+ 
+------------------------------
+
+>>> CHAMADO: CSSS-985 <<<
+[2026-01-27T18:16:53.976-0300] Roger Lourenço Rios: h2. Informação ao Solicitante
+{quote}
+{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}
+
+---
+Logo retornaremos com maiores informações.
+Fique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.
+--- \\
+\\
+----
+Obs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*
+Link direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]
+----
+{quote}
+[2026-01-27T18:53:28.300-0300] Milton Orgil da Silva - Multidata: Boa noite, prezados!
+
+Liberação realizada para a máquina P3000002570, ao qual foi inserida no grupo virtual ArmazenamentoNuvem_Desktop, para utilização de armazenamento em nuvem, como Icloud.
+
+ 
+
+!image-2026-01-27-21-52-09-373.png|width=783,height=132!
+
+ 
+
+Poderiam realizar o Update Now na política e tentar novamente o acesso?
+------------------------------
+
+>>> CHAMADO: CSSS-984 <<<
+[2026-01-27T17:56:08.188-0300] Anthony Vítor Silva Lima - TI/SST: 
+
+!image-1.png|thumbnail!
+
+!image.png|thumbnail!
+[2026-01-28T09:03:32.846-0300] Roger Lourenço Rios: h2. Informação ao Solicitante
+{quote}
+{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}
+
+---
+Logo retornaremos com maiores informações.
+Fique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.
+--- \\
+\\
+----
+Obs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*
+Link direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]
+----
+{quote}
+[2026-01-28T16:54:44.420-0300] Milton Orgil da Silva - Multidata: Boa tarde!! 
+
+Estou analisando, em breve retorno com atualizações.
+
+Atenciosamente,
+[2026-01-28T18:02:24.283-0300] Milton Orgil da Silva - Multidata: Olá,
+
+ 
+
+Poderia fornecer o logs dessa máquina, segue o caminho para a coleta dos logs _C:\ProgramData\CheckPoint\Logs\cpda.log_
+
+ 
+
+_Atenciosamente,_
+------------------------------
+
+>>> CHAMADO: CSSS-638 <<<
+[2026-01-27T11:02:14.422-0300] Roger Lourenço Rios: h2. Informação ao Solicitante
+{quote}
+{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}
+
+---
+Logo retornaremos com maiores informações.
+Fique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.
+--- \\
+\\
+----
+Obs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*
+Link direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]
+----
+{quote}
+[2026-01-27T16:34:31.756-0300] Anthony Vítor Silva Lima - TI/SST: Por favor, 
+
+fazer a liberação para utilização do USB para inserção de HD no equipamento com os seguintes dados, para o dia 29/01/2026:
+
+Hostname: CNT-NOT-M07
+Domínio: Sesc-go.com.br
+Faixa de IP: 10.134.100.1-254
+
+Atenciosamente,
+Equipe de suporte técnico.
+------------------------------
+
+>>> CHAMADO: CSSS-250 <<<
+[2026-01-08T13:42:27.769-0300] Nikolas Delfino Alves Silva - SESC Caldas Novas: 
+
+!image.png|thumbnail!
+[2026-01-08T13:42:55.065-0300] Roger Lourenço Rios: h2. Informação ao Solicitante
+{quote}
+{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}
+
+---
+Logo retornaremos com maiores informações.
+Fique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.
+--- \\
+\\
+----
+Obs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*
+Link direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]
+----
+{quote}
+------------------------------

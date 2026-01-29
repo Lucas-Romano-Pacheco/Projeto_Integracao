@@ -1,0 +1,8 @@
+RELATÓRIO DE CHAMADOS ABERTOS - 2026-01-28 23:48:04.714758
+==================================================
+ID: CSSS-1014 | Título: Solicitação de Liberação de Dispositivos USB | Relator: Roger Lourenço Rios
+ID: CSSS-1010 | Título: Atualização dos instaladores ENDPOINT. | Relator: Denison Batista Guimarães - TI/SIS
+ID: CSSS-985 | Título: Liberar acesso ao Icloud | Relator: Ana Carolina da Costa Moreira
+ID: CSSS-984 | Título: Verificar o problema do ENDPOINT de não conectar no Server | Relator: Anthony Vítor Silva Lima - TI/SST
+ID: CSSS-638 | Título: Liberar computador para ter acesso ao HD | Relator: Henrique Rodrigues Bueno Fernandes - Sesc Centro
+ID: CSSS-250 | Título: MAC + IP | Relator: Nikolas Delfino Alves Silva - SESC Caldas Novas

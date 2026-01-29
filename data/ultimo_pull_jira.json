@@ -1,0 +1,885 @@
+{
+    "expand": "schema,names",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 6,
+    "issues": [
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "225126",
+            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225126",
+            "key": "CSSS-1014",
+            "fields": {
+                "summary": "Solicitação de Liberação de Dispositivos USB",
+                "reporter": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                    "name": "roger.rios",
+                    "key": "JIRAUSER14973",
+                    "emailAddress": "roger.rios@go.senac.br",
+                    "avatarUrls": {
+                        "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                        "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                        "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                        "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                    },
+                    "displayName": "Roger Lourenço Rios",
+                    "active": true,
+                    "timeZone": "America/Sao_Paulo"
+                },
+                "comment": {
+                    "comments": [
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225126/comment/87667",
+                            "id": "87667",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "\n\n!image.png|thumbnail!",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T13:25:04.066-0300",
+                            "updated": "2026-01-28T13:25:04.066-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225126/comment/87668",
+                            "id": "87668",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "h2. Informação ao Solicitante\n{quote}\n{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}\n\n---\nLogo retornaremos com maiores informações.\nFique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.\n--- \\\\\n\\\\\n----\nObs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*\nLink direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]\n----\n{quote}",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T13:26:17.366-0300",
+                            "updated": "2026-01-28T13:26:17.366-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225126/comment/87715",
+                            "id": "87715",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "Boa tarde, Roger! \n\n \n\nLiberação realizada. Pode dar updatenow e testar. Fico no aguardo de um feedback!\n\n \n\nAtenciosamente,\n\n ",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T14:49:51.888-0300",
+                            "updated": "2026-01-28T14:49:51.888-0300"
+                        }
+                    ],
+                    "maxResults": 1000,
+                    "total": 3,
+                    "startAt": 0
+                },
+                "created": "2026-01-28T13:25:03.000-0300",
+                "status": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/status/11213",
+                    "description": "",
+                    "iconUrl": "https://jira.sescgo.com.br/images/icons/statuses/generic.png",
+                    "name": "Suporte Multidata",
+                    "id": "11213",
+                    "statusCategory": {
+                        "self": "https://jira.sescgo.com.br/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "default",
+                        "name": "A fazer"
+                    }
+                }
+            },
+            "renderedFields": null
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "225117",
+            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225117",
+            "key": "CSSS-1010",
+            "fields": {
+                "summary": "Atualização dos instaladores ENDPOINT.",
+                "reporter": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/user?username=denison.batista",
+                    "name": "denison.batista",
+                    "key": "JIRAUSER11371",
+                    "emailAddress": "denison.batista@go.senac.br",
+                    "avatarUrls": {
+                        "48x48": "https://www.gravatar.com/avatar/d1c3663fe32e1e064805bf87922b8148?d=mm&s=48",
+                        "24x24": "https://www.gravatar.com/avatar/d1c3663fe32e1e064805bf87922b8148?d=mm&s=24",
+                        "16x16": "https://www.gravatar.com/avatar/d1c3663fe32e1e064805bf87922b8148?d=mm&s=16",
+                        "32x32": "https://www.gravatar.com/avatar/d1c3663fe32e1e064805bf87922b8148?d=mm&s=32"
+                    },
+                    "displayName": "Denison Batista Guimarães - TI/SIS",
+                    "active": true,
+                    "timeZone": "America/Sao_Paulo"
+                },
+                "comment": {
+                    "comments": [
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225117/comment/87650",
+                            "id": "87650",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "h2. Informação ao Solicitante\n{quote}\n{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}\n\n---\nLogo retornaremos com maiores informações.\nFique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.\n--- \\\\\n\\\\\n----\nObs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*\nLink direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]\n----\n{quote}",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T11:57:46.377-0300",
+                            "updated": "2026-01-28T11:57:46.377-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225117/comment/87651",
+                            "id": "87651",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "Bom dia, Denison! Iremos providenciar\n\nAssim que obtivermos os instaladores, enviaremos através de canais seguros de envio.",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T11:59:39.037-0300",
+                            "updated": "2026-01-28T11:59:39.037-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225117/comment/87798",
+                            "id": "87798",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "Boa tarde, Denison!\n\nEm relação a solicitação \"Endpoint para Notebook TI com VPN e politicas voltadas a TI.\" estamos mapeando qual a política para as máquinas relacionadas ao setor de TI.\n\n \n\nNo tenant do SESC, encontramos uma política com o nome DTDI. Enquanto no SENAC, encontramos uma política com o nome CEIN:\n * Alguma dessas políticas está relacionada ao departamento de TI da corporação?\n\n \n\n ",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T16:42:42.449-0300",
+                            "updated": "2026-01-28T16:42:42.449-0300"
+                        }
+                    ],
+                    "maxResults": 1000,
+                    "total": 3,
+                    "startAt": 0
+                },
+                "created": "2026-01-28T11:44:44.000-0300",
+                "status": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/status/11213",
+                    "description": "",
+                    "iconUrl": "https://jira.sescgo.com.br/images/icons/statuses/generic.png",
+                    "name": "Suporte Multidata",
+                    "id": "11213",
+                    "statusCategory": {
+                        "self": "https://jira.sescgo.com.br/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "default",
+                        "name": "A fazer"
+                    }
+                }
+            },
+            "renderedFields": null
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "225075",
+            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225075",
+            "key": "CSSS-985",
+            "fields": {
+                "summary": "Liberar acesso ao Icloud",
+                "reporter": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/user?username=ana.moreira",
+                    "name": "ana.moreira",
+                    "key": "JIRAUSER10439",
+                    "emailAddress": "ana.moreira@go.senac.br",
+                    "avatarUrls": {
+                        "48x48": "https://www.gravatar.com/avatar/15fcd765afef94c054131e07ea6d6315?d=mm&s=48",
+                        "24x24": "https://www.gravatar.com/avatar/15fcd765afef94c054131e07ea6d6315?d=mm&s=24",
+                        "16x16": "https://www.gravatar.com/avatar/15fcd765afef94c054131e07ea6d6315?d=mm&s=16",
+                        "32x32": "https://www.gravatar.com/avatar/15fcd765afef94c054131e07ea6d6315?d=mm&s=32"
+                    },
+                    "displayName": "Ana Carolina da Costa Moreira",
+                    "active": true,
+                    "timeZone": "America/Sao_Paulo"
+                },
+                "comment": {
+                    "comments": [
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225075/comment/87537",
+                            "id": "87537",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "h2. Informação ao Solicitante\n{quote}\n{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}\n\n---\nLogo retornaremos com maiores informações.\nFique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.\n--- \\\\\n\\\\\n----\nObs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*\nLink direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]\n----\n{quote}",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-27T18:16:53.976-0300",
+                            "updated": "2026-01-27T18:16:53.976-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225075/comment/87539",
+                            "id": "87539",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "Boa noite, prezados!\n\nLiberação realizada para a máquina P3000002570, ao qual foi inserida no grupo virtual ArmazenamentoNuvem_Desktop, para utilização de armazenamento em nuvem, como Icloud.\n\n \n\n!image-2026-01-27-21-52-09-373.png|width=783,height=132!\n\n \n\nPoderiam realizar o Update Now na política e tentar novamente o acesso?",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-27T18:53:28.300-0300",
+                            "updated": "2026-01-27T18:53:28.300-0300"
+                        }
+                    ],
+                    "maxResults": 1000,
+                    "total": 2,
+                    "startAt": 0
+                },
+                "created": "2026-01-27T18:10:01.000-0300",
+                "status": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/status/11213",
+                    "description": "",
+                    "iconUrl": "https://jira.sescgo.com.br/images/icons/statuses/generic.png",
+                    "name": "Suporte Multidata",
+                    "id": "11213",
+                    "statusCategory": {
+                        "self": "https://jira.sescgo.com.br/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "default",
+                        "name": "A fazer"
+                    }
+                }
+            },
+            "renderedFields": null
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "225074",
+            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225074",
+            "key": "CSSS-984",
+            "fields": {
+                "summary": "Verificar o problema do ENDPOINT de não conectar no Server",
+                "reporter": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/user?username=anthony.lima",
+                    "name": "anthony.lima",
+                    "key": "JIRAUSER17302",
+                    "emailAddress": "anthony.lima@sescgo.com.br",
+                    "avatarUrls": {
+                        "48x48": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=48",
+                        "24x24": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=24",
+                        "16x16": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=16",
+                        "32x32": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=32"
+                    },
+                    "displayName": "Anthony Vítor Silva Lima - TI/SST",
+                    "active": true,
+                    "timeZone": "America/Sao_Paulo"
+                },
+                "comment": {
+                    "comments": [
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225074/comment/87535",
+                            "id": "87535",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=anthony.lima",
+                                "name": "anthony.lima",
+                                "key": "JIRAUSER17302",
+                                "emailAddress": "anthony.lima@sescgo.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=32"
+                                },
+                                "displayName": "Anthony Vítor Silva Lima - TI/SST",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "\n\n!image-1.png|thumbnail!\n\n!image.png|thumbnail!",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=anthony.lima",
+                                "name": "anthony.lima",
+                                "key": "JIRAUSER17302",
+                                "emailAddress": "anthony.lima@sescgo.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=32"
+                                },
+                                "displayName": "Anthony Vítor Silva Lima - TI/SST",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-27T17:56:08.188-0300",
+                            "updated": "2026-01-27T17:56:08.188-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225074/comment/87575",
+                            "id": "87575",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "h2. Informação ao Solicitante\n{quote}\n{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}\n\n---\nLogo retornaremos com maiores informações.\nFique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.\n--- \\\\\n\\\\\n----\nObs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*\nLink direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]\n----\n{quote}",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T09:03:32.846-0300",
+                            "updated": "2026-01-28T09:03:32.846-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225074/comment/87807",
+                            "id": "87807",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "Boa tarde!! \n\nEstou analisando, em breve retorno com atualizações.\n\nAtenciosamente,",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T16:54:44.420-0300",
+                            "updated": "2026-01-28T16:54:44.420-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/225074/comment/87828",
+                            "id": "87828",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "Olá,\n\n \n\nPoderia fornecer o logs dessa máquina, segue o caminho para a coleta dos logs _C:\\ProgramData\\CheckPoint\\Logs\\cpda.log_\n\n \n\n_Atenciosamente,_",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=milton.orgil",
+                                "name": "milton.orgil",
+                                "key": "JIRAUSER29208",
+                                "emailAddress": "milton.orgil@multidata.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?avatarId=10341",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&avatarId=10341",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&avatarId=10341",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&avatarId=10341"
+                                },
+                                "displayName": "Milton Orgil da Silva - Multidata",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-28T18:02:24.283-0300",
+                            "updated": "2026-01-28T18:02:24.283-0300"
+                        }
+                    ],
+                    "maxResults": 1000,
+                    "total": 4,
+                    "startAt": 0
+                },
+                "created": "2026-01-27T17:56:07.000-0300",
+                "status": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/status/11213",
+                    "description": "",
+                    "iconUrl": "https://jira.sescgo.com.br/images/icons/statuses/generic.png",
+                    "name": "Suporte Multidata",
+                    "id": "11213",
+                    "statusCategory": {
+                        "self": "https://jira.sescgo.com.br/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "default",
+                        "name": "A fazer"
+                    }
+                }
+            },
+            "renderedFields": null
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "224524",
+            "self": "https://jira.sescgo.com.br/rest/api/2/issue/224524",
+            "key": "CSSS-638",
+            "fields": {
+                "summary": "Liberar computador para ter acesso ao HD",
+                "reporter": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/user?username=henrique.bueno",
+                    "name": "henrique.bueno",
+                    "key": "JIRAUSER12365",
+                    "emailAddress": "henrique.bueno@sescgo.com.br",
+                    "avatarUrls": {
+                        "48x48": "https://www.gravatar.com/avatar/5fff4cf2c03f29cc3289f0ad7cd38de2?d=mm&s=48",
+                        "24x24": "https://www.gravatar.com/avatar/5fff4cf2c03f29cc3289f0ad7cd38de2?d=mm&s=24",
+                        "16x16": "https://www.gravatar.com/avatar/5fff4cf2c03f29cc3289f0ad7cd38de2?d=mm&s=16",
+                        "32x32": "https://www.gravatar.com/avatar/5fff4cf2c03f29cc3289f0ad7cd38de2?d=mm&s=32"
+                    },
+                    "displayName": "Henrique Rodrigues Bueno Fernandes - Sesc Centro",
+                    "active": true,
+                    "timeZone": "America/Sao_Paulo"
+                },
+                "comment": {
+                    "comments": [
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/224524/comment/87318",
+                            "id": "87318",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "h2. Informação ao Solicitante\n{quote}\n{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}\n\n---\nLogo retornaremos com maiores informações.\nFique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.\n--- \\\\\n\\\\\n----\nObs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*\nLink direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]\n----\n{quote}",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-27T11:02:14.422-0300",
+                            "updated": "2026-01-27T11:02:14.422-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/224524/comment/87499",
+                            "id": "87499",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=anthony.lima",
+                                "name": "anthony.lima",
+                                "key": "JIRAUSER17302",
+                                "emailAddress": "anthony.lima@sescgo.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=32"
+                                },
+                                "displayName": "Anthony Vítor Silva Lima - TI/SST",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "Por favor, \n\nfazer a liberação para utilização do USB para inserção de HD no equipamento com os seguintes dados, para o dia 29/01/2026:\n\nHostname: CNT-NOT-M07\nDomínio: Sesc-go.com.br\nFaixa de IP: 10.134.100.1-254\n\nAtenciosamente,\nEquipe de suporte técnico.",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=anthony.lima",
+                                "name": "anthony.lima",
+                                "key": "JIRAUSER17302",
+                                "emailAddress": "anthony.lima@sescgo.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/dcac39b4ff37d3b1dedbf5b6c9d1dad8?d=mm&s=32"
+                                },
+                                "displayName": "Anthony Vítor Silva Lima - TI/SST",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-27T16:34:31.756-0300",
+                            "updated": "2026-01-27T16:34:31.756-0300"
+                        }
+                    ],
+                    "maxResults": 1000,
+                    "total": 2,
+                    "startAt": 0
+                },
+                "created": "2026-01-19T10:49:04.000-0300",
+                "status": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/status/11213",
+                    "description": "",
+                    "iconUrl": "https://jira.sescgo.com.br/images/icons/statuses/generic.png",
+                    "name": "Suporte Multidata",
+                    "id": "11213",
+                    "statusCategory": {
+                        "self": "https://jira.sescgo.com.br/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "default",
+                        "name": "A fazer"
+                    }
+                }
+            },
+            "renderedFields": null
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "223845",
+            "self": "https://jira.sescgo.com.br/rest/api/2/issue/223845",
+            "key": "CSSS-250",
+            "fields": {
+                "summary": "MAC + IP",
+                "reporter": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/user?username=nikolas.silva",
+                    "name": "nikolas.silva",
+                    "key": "JIRAUSER14396",
+                    "emailAddress": "nikolas.silva@sescgo.com.br",
+                    "avatarUrls": {
+                        "48x48": "https://jira.sescgo.com.br/secure/useravatar?ownerId=JIRAUSER14396&avatarId=12503",
+                        "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&ownerId=JIRAUSER14396&avatarId=12503",
+                        "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&ownerId=JIRAUSER14396&avatarId=12503",
+                        "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&ownerId=JIRAUSER14396&avatarId=12503"
+                    },
+                    "displayName": "Nikolas Delfino Alves Silva - SESC Caldas Novas",
+                    "active": true,
+                    "timeZone": "America/Sao_Paulo"
+                },
+                "comment": {
+                    "comments": [
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/223845/comment/83409",
+                            "id": "83409",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=nikolas.silva",
+                                "name": "nikolas.silva",
+                                "key": "JIRAUSER14396",
+                                "emailAddress": "nikolas.silva@sescgo.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?ownerId=JIRAUSER14396&avatarId=12503",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&ownerId=JIRAUSER14396&avatarId=12503",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&ownerId=JIRAUSER14396&avatarId=12503",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&ownerId=JIRAUSER14396&avatarId=12503"
+                                },
+                                "displayName": "Nikolas Delfino Alves Silva - SESC Caldas Novas",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "\n\n!image.png|thumbnail!",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=nikolas.silva",
+                                "name": "nikolas.silva",
+                                "key": "JIRAUSER14396",
+                                "emailAddress": "nikolas.silva@sescgo.com.br",
+                                "avatarUrls": {
+                                    "48x48": "https://jira.sescgo.com.br/secure/useravatar?ownerId=JIRAUSER14396&avatarId=12503",
+                                    "24x24": "https://jira.sescgo.com.br/secure/useravatar?size=small&ownerId=JIRAUSER14396&avatarId=12503",
+                                    "16x16": "https://jira.sescgo.com.br/secure/useravatar?size=xsmall&ownerId=JIRAUSER14396&avatarId=12503",
+                                    "32x32": "https://jira.sescgo.com.br/secure/useravatar?size=medium&ownerId=JIRAUSER14396&avatarId=12503"
+                                },
+                                "displayName": "Nikolas Delfino Alves Silva - SESC Caldas Novas",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-08T13:42:27.769-0300",
+                            "updated": "2026-01-08T13:42:27.769-0300"
+                        },
+                        {
+                            "self": "https://jira.sescgo.com.br/rest/api/2/issue/223845/comment/83410",
+                            "id": "83410",
+                            "author": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "body": "h2. Informação ao Solicitante\n{quote}\n{color:#de350b}*{sd-inline-noformat}ESTA É UMA MENSAGEM AUTOMÁTICA{sd-inline-noformat}*{color}{color:#172b4d}{color} apenas para lhe avisar que sua solicitação já foi direcionada para o {color:#de350b}*{sd-inline-noformat}Atendimento{sd-inline-noformat}*{color}{color:#172b4d}.{color}\n\n---\nLogo retornaremos com maiores informações.\nFique atento(a), caso necessário nosso time entrará em contato para exclarecimentos referentes à solicitação.\n--- \\\\\n\\\\\n----\nObs.: *NÃO RESPONDA AO E-MAIL, UTILIZE O LINK ABAIXO PARA ACESSO AO PORTAL JIRA. RESPOSTAS SOMENTE SÃO RECEBIDAS QUANDO ENVIADAS ATRAVÉS DO PORTAL.*\nLink direto para o portal: [https://jira.sescgo.com.br/servicedesk/customer/user/requests?status=open]\n----\n{quote}",
+                            "updateAuthor": {
+                                "self": "https://jira.sescgo.com.br/rest/api/2/user?username=roger.rios",
+                                "name": "roger.rios",
+                                "key": "JIRAUSER14973",
+                                "emailAddress": "roger.rios@go.senac.br",
+                                "avatarUrls": {
+                                    "48x48": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=48",
+                                    "24x24": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=24",
+                                    "16x16": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=16",
+                                    "32x32": "https://www.gravatar.com/avatar/2bee0d20d185c43dcc746efdaa2c34e8?d=mm&s=32"
+                                },
+                                "displayName": "Roger Lourenço Rios",
+                                "active": true,
+                                "timeZone": "America/Sao_Paulo"
+                            },
+                            "created": "2026-01-08T13:42:55.065-0300",
+                            "updated": "2026-01-08T13:42:55.065-0300"
+                        }
+                    ],
+                    "maxResults": 1000,
+                    "total": 2,
+                    "startAt": 0
+                },
+                "created": "2026-01-08T13:42:27.000-0300",
+                "status": {
+                    "self": "https://jira.sescgo.com.br/rest/api/2/status/11213",
+                    "description": "",
+                    "iconUrl": "https://jira.sescgo.com.br/images/icons/statuses/generic.png",
+                    "name": "Suporte Multidata",
+                    "id": "11213",
+                    "statusCategory": {
+                        "self": "https://jira.sescgo.com.br/rest/api/2/statuscategory/2",
+                        "id": 2,
+                        "key": "new",
+                        "colorName": "default",
+                        "name": "A fazer"
+                    }
+                }
+            },
+            "renderedFields": null
+        }
+    ],
+    "warningMessages": null,
+    "names": null,
+    "schema": null
+}
