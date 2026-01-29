@@ -1,95 +1,125 @@
 import requests
-import json
 import sqlite3
 import os
+import schedule
+import time
 from datetime import datetime
 
 # --- CONFIGURAÇÃO DE CAMINHOS ---
+# Usamos caminhos absolutos para evitar erros de localização da pasta 'data'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PASTA_DATA = os.path.join(BASE_DIR, 'data')
-PASTA_OUTPUT = os.path.join(BASE_DIR, 'output')
 CAMINHO_DB = os.path.join(PASTA_DATA, 'integracao_jira.db')
-
-# Garante que todas as pastas existam
-for p in [PASTA_DATA, PASTA_OUTPUT]:
-    if not os.path.exists(p): os.makedirs(p)
 
 # --- CREDENCIAIS ---
 JIRA_URL = "https://jira.sescgo.com.br"
 JIRA_USER = "milton.orgil"
 JIRA_PASS = "%Qk4fs1*"
 
-def garantir_tabelas(cursor):
-    """Cria a estrutura do banco se não existir"""
-    cursor.execute('''CREATE TABLE IF NOT EXISTS chamados 
-                      (chave TEXT PRIMARY KEY, titulo TEXT, status TEXT, relator TEXT, data_criacao TEXT)''')
-    cursor.execute('''CREATE TABLE IF NOT EXISTS comentarios 
-                      (id_comentario TEXT PRIMARY KEY, chave_chamado TEXT, autor TEXT, corpo TEXT, data_criado TEXT)''')
+def garantir_infraestrutura():
+    """Cria a pasta e o banco ANTES de tentar conectar na internet"""
+    if not os.path.exists(PASTA_DATA):
+        os.makedirs(PASTA_DATA)
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Pasta 'data' criada.")
 
-def sincronizar_completo():
-    print(f"[{datetime.now()}] Iniciando sincronização e geração de relatórios...")
+    conn = sqlite3.connect(CAMINHO_DB)
+    cursor = conn.cursor()
+    # Criação das tabelas com as 7 colunas solicitadas
+    cursor.execute('''CREATE TABLE IF NOT EXISTS chamados (
+                        chave TEXT PRIMARY KEY, 
+                        titulo TEXT, 
+                        prioridade TEXT, 
+                        tipo TEXT,
+                        relator TEXT, 
+                        data_criacao TEXT,
+                        data_atualizacao TEXT)''')
+    cursor.execute('''CREATE TABLE IF NOT EXISTS comentarios (
+                        id_comentario TEXT PRIMARY KEY, 
+                        chave_chamado TEXT, 
+                        autor TEXT, 
+                        corpo TEXT, 
+                        data_criado TEXT)''')
+    conn.commit()
+    conn.close()
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Infraestrutura do banco verificada e pronta.")
+
+def formatar_data_amigavel(data_iso):
+    """Formata atualização para 'há X dias HH:MM AM/PM'"""
+    try:
+        dt_obj = datetime.strptime(data_iso[:19], '%Y-%m-%dT%H:%M:%S')
+        agora = datetime.now()
+        diferenca = agora - dt_obj
+        hora_formatada = dt_obj.strftime('%I:%M %p')
+        if diferenca.days == 0: return f"hoje às {hora_formatada}"
+        elif diferenca.days == 1: return f"ontem às {hora_formatada}"
+        else: return f"há {diferenca.days} dias {hora_formatada}"
+    except: return data_iso
+
+def executar_sincronizacao():
+    print(f"\n[{datetime.now().strftime('%d/%m/%Y %H:%M:%S')}] Iniciando varredura no Jira...")
     
     jql = 'project = CSSS AND status = "Suporte Multidata"'
     url = f"{JIRA_URL}/rest/api/2/search"
-    params = {'jql': jql, 'fields': 'key,summary,status,reporter,created,comment', 'maxResults': 50}
+    params = {'jql': jql, 'fields': 'key,summary,priority,issuetype,reporter,created,updated,comment', 'maxResults': 50}
 
     try:
-        response = requests.get(url, auth=(JIRA_USER, JIRA_PASS), params=params)
-        if response.status_code != 200: return print(f"Erro Jira: {response.status_code}")
+        # Reduzimos o timeout para 15s para o script não ficar "preso" se a rede cair
+        response = requests.get(url, auth=(JIRA_USER, JIRA_PASS), params=params, timeout=15)
         
-        dados_jira = response.json()
-        issues = dados_jira.get('issues', [])
+        if response.status_code != 200:
+            print(f"Aviso: Jira retornou erro {response.status_code}. Tentaremos novamente no próximo ciclo.")
+            return
 
-        # 1. SALVAR JSON BRUTO (Auditoria técnica)
-        with open(os.path.join(PASTA_DATA, "ultimo_pull_jira.json"), "w", encoding="utf-8") as f:
-            json.dump(dados_jira, f, indent=4, ensure_ascii=False)
-
-        # 2. PROCESSAMENTO (Banco + TXT)
+        issues = response.json().get('issues', [])
+        total_na_fila = len(issues)
+        
         conn = sqlite3.connect(CAMINHO_DB)
         cursor = conn.cursor()
-        garantir_tabelas(cursor)
 
-        # Caminhos dos arquivos TXT
-        txt_chamados = os.path.join(PASTA_OUTPUT, "conferencia_jira.txt")
-        txt_comentarios = os.path.join(PASTA_OUTPUT, "comentarios_extraidos.txt")
+        novos = 0
+        atualizados = 0
 
-        with open(txt_chamados, "w", encoding="utf-8") as f_ch, open(txt_comentarios, "w", encoding="utf-8") as f_co:
-            f_ch.write(f"RELATÓRIO DE CHAMADOS ABERTOS - {datetime.now()}\n" + "="*50 + "\n")
-            f_co.write(f"HISTÓRICO DE COMENTÁRIOS - {datetime.now()}\n" + "="*50 + "\n")
+        for issue in issues:
+            chave = issue['key']
+            f = issue['fields']
+            data_criacao = f.get('created')[:10] # Formato AAAA-MM-DD
+            data_up_api = formatar_data_amigavel(f.get('updated'))
+            
+            cursor.execute('SELECT data_atualizacao FROM chamados WHERE chave = ?', (chave,))
+            resultado = cursor.fetchone()
+            
+            if resultado is None: novos += 1
+            elif resultado[0] != data_up_api: atualizados += 1
 
-            for issue in issues:
-                chave = issue['key']
-                f = issue['fields']
-                
-                # Salvar no Banco
-                cursor.execute('INSERT OR REPLACE INTO chamados VALUES (?,?,?,?,?)', 
-                             (chave, f['summary'], f['status']['name'], f['reporter']['displayName'], f['created']))
-                
-                # Escrever no TXT de Chamados
-                f_ch.write(f"ID: {chave} | Título: {f['summary']} | Relator: {f['reporter']['displayName']}\n")
-
-                # Processar Comentários
-                f_co.write(f"\n>>> CHAMADO: {chave} <<<\n")
-                comentarios = f.get('comment', {}).get('comments', [])
-                
-                if not comentarios:
-                    f_co.write("Sem comentários.\n")
-                else:
-                    for c in comentarios:
-                        # Salvar no Banco
-                        cursor.execute('INSERT OR IGNORE INTO comentarios VALUES (?,?,?,?,?)',
-                                     (c['id'], chave, c['author']['displayName'], c['body'], c['created']))
-                        # Escrever no TXT de Comentários
-                        f_co.write(f"[{c['created']}] {c['author']['displayName']}: {c['body']}\n")
-                
-                f_co.write("-" * 30 + "\n")
+            cursor.execute('INSERT OR REPLACE INTO chamados VALUES (?,?,?,?,?,?,?)', 
+                         (chave, f['summary'], f.get('priority', {}).get('name'), 
+                          f.get('issuetype', {}).get('name'), f['reporter']['displayName'], 
+                          data_criacao, data_up_api))
 
         conn.commit()
         conn.close()
-        print(f"Sucesso! Banco atualizado e relatórios gerados na pasta /output.")
 
-    except Exception as e:
-        print(f"Falha na operação: {e}")
+        print(f"--- Relatório do Ciclo ---")
+        print(f"Encontrados {total_na_fila} chamados na fila.")
+        if novos > 0: print(f"-> {novos} novos adicionados.")
+        if atualizados > 0: print(f"-> {atualizados} atualizados.")
+        if novos == 0 and atualizados == 0: print(f"-> Nenhuma alteração.")
+        print(f"--------------------------")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Aviso de Rede: Servidor do Jira demorou a responder. Próxima tentativa em 30 min.")
+
+# Agendamento
+schedule.every(3).seconds.do(executar_sincronizacao)
 
 if __name__ == "__main__":
-    sincronizar_completo()
+    # 1. Garante que o banco exista ANTES de qualquer erro de rede
+    garantir_infraestrutura()
+    
+    # 2. Tenta a primeira sincronização
+    executar_sincronizacao()
+    
+    print("Monitoramento ativo. Aguardando próximos ciclos...")
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
