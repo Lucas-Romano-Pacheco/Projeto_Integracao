@@ -1,4 +1,4 @@
-RELATÓRIO DE CHAMADOS ABERTOS - 2026-01-28 23:48:04.714758
+RELATÓRIO DE CHAMADOS ABERTOS - 2026-01-29 00:09:41.322172
 ==================================================
 ID: CSSS-1014 | Título: Solicitação de Liberação de Dispositivos USB | Relator: Roger Lourenço Rios
 ID: CSSS-1010 | Título: Atualização dos instaladores ENDPOINT. | Relator: Denison Batista Guimarães - TI/SIS
